@@ -63,6 +63,7 @@ type Span struct {
 	Tag     map[string]interface{} `json:"tag,omitempty"`
 	Logs    []Log                  `json:"logs"`
 	Process Process                `json:"process,omitempty"`
+	Timestamp uint64     `json:"@timestamp"`
 }
 
 // Reference is a reference from one span to another

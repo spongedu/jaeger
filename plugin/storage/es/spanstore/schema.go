@@ -85,6 +85,10 @@ var (
 			"type": "date",
 			"format": "epoch_millis"
 		},
+		"@timestamp": {
+			"type": "date",
+			"format": "epoch_millis"
+		},
 		"duration": {
 			"type": "long"
 		},

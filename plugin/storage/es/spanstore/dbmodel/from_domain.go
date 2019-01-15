@@ -51,6 +51,7 @@ func (fd FromDomain) convertSpanInternal(span *model.Span) Span {
 		OperationName:   span.OperationName,
 		StartTime:       model.TimeAsEpochMicroseconds(span.StartTime),
 		StartTimeMillis: model.TimeAsEpochMicroseconds(span.StartTime) / 1000,
+		Timestamp: 		model.TimeAsEpochMicroseconds(span.StartTime) / 1000,
 		Duration:        model.DurationAsMicroseconds(span.Duration),
 		Tags:            tags,
 		Tag:             tagsMap,
