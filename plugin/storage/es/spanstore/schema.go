@@ -37,7 +37,7 @@ const mapping = `{
 				"span_tags_map": {
 					"mapping": {
 						"type": "keyword",
-						"ignore_above": 256
+						"ignore_above": 2048
 					},
 					"path_match": "tag.*"
 				}
@@ -46,7 +46,7 @@ const mapping = `{
 				"process_tags_map": {
 					"mapping": {
 						"type": "keyword",
-						"ignore_above": 256
+						"ignore_above": 2048
 					},
 					"path_match": "process.tag.*"
 				}
@@ -135,11 +135,11 @@ var (
 					"properties": {
 						"key": {
 							"type": "keyword",
-							"ignore_above": 256
+							"ignore_above": 1024
 						},
 						"value": {
 							"type": "keyword",
-							"ignore_above": 256
+							"ignore_above": 4096
 						},
 						"tagType": {
 							"type": "keyword",
@@ -176,11 +176,11 @@ var (
 			"properties": {
 				"key": {
 					"type": "keyword",
-					"ignore_above": 256
+					"ignore_above": 1024
 				},
 				"value": {
 					"type": "keyword",
-					"ignore_above": 256
+					"ignore_above": 4096
 				},
 				"tagType": {
 					"type": "keyword",
